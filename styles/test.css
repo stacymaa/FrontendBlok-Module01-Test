@@ -1,0 +1,24 @@
+h1 {
+  color: pink;
+  text-align: center;
+  font-weight: 600;
+}
+
+p {
+  font-size: 14px;
+}
+
+q {
+  font-style: italic;
+  font-size: 12px;
+}
+
+ul,
+ol {
+  font-size: 14px;
+  color: brown;
+}
+
+a {
+  color: brown;
+}
