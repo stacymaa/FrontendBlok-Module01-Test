@@ -23,6 +23,11 @@ body {
   padding: 5px 15px;
 }
 
+.navigation {
+  display: flex;
+  gap: 10px;
+}
+
 ul {
   display: flex;
   list-style-type: none;
@@ -30,8 +35,15 @@ ul {
   margin: 0;
 }
 
-ul > li:not(:last-child) {
+/* Из урока 8: чтобы в nav у всех элементов, кроме самого правого, было справа margin */
+/* ul > li:not(:last-child) {
   margin-right: 30px;
+} */
+
+a {
+  color: rebeccapurple;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .box {
@@ -41,10 +53,9 @@ ul > li:not(:last-child) {
   border-bottom: 1px solid #000;
 }
 
-a {
-  color: rebeccapurple;
-  font-weight: 700;
-  text-decoration: none;
+.aside {
+  background-color: lavender;
+  padding: 10px 20px;
 }
 
 h1,
@@ -54,9 +65,20 @@ h3 {
   letter-spacing: 0.01em;
 }
 
-.aside {
-  background-color: lavender;
-  padding: 10px 20px;
+.results {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.link {
+  background-color: rebeccapurple;
+  color: white;
+  padding: 8px 15px;
+
+  display: block;
+  text-align: center;
+  margin-top: 10px;
 }
 
 section {
@@ -67,12 +89,6 @@ section {
 
 h1 + section {
   background-color: moccasin;
-}
-
-.link {
-  background-color: rebeccapurple;
-  color: white;
-  padding: 8px 15px;
 }
 
 .post {
