@@ -30,7 +30,7 @@ ul {
   margin: 0;
 }
 
-ul > li {
+ul > li:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -65,11 +65,21 @@ section {
   margin-bottom: 20px;
 }
 
+h1 + section {
+  background-color: moccasin;
+}
+
+.link {
+  background-color: rebeccapurple;
+  color: white;
+  padding: 8px 15px;
+}
+
 .post {
   padding-bottom: 20px;
 }
 
-footer {
+.footer {
   font-size: 13px;
   margin-right: 20px;
   margin-left: 20px;
